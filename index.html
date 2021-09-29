@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Calculator</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .calculator{
+               margin-left: 530px;
+         }
+         input{
+            width: 380px;
+         }
+         
+    </style>
+</head>
+<body class="text-center "> 
+    <h3  class="text-3xl font-bold mb-3 text-pink-500 mt-10">CALCULATOR</h3>    
+    <input type="text" name="" class="border-2 border-black mb-3 text-xl pl-10 rounded-xl h-20" id="output"> 
+
+   
+      
+        <div class="calculator grid grid-cols-4 grid-rows-5 text-xl mx-80 gap-2 bg-indigo-400 p-10  gap-x-3 rounded-xl  w-96 h-80  ">
+            <button class="bg-green-300 font-bold rounded-xl -pl-80" onclick="display('+')">+</button>
+            <button class="bg-green-300 font-bold rounded-xl " onclick="display('-')">-</button>
+            <button class="bg-green-300 font-bold rounded-xl " onclick="display('*')">x</button>
+            <button class="bg-green-300 font-bold rounded-xl " onclick="display('/')">/</button>
+    
+            <button class="bg-gray-300  rounded-xl" onclick="display('7')">7</button>
+            <button class="bg-gray-300  rounded-xl" onclick="display('8')">8</button>
+            <button class="bg-gray-300  rounded-xl" onclick="display('9')">9</button>
+            <button class="row-span-4 bg-red-500  rounded-xl ml-1 font-bold " onclick="calculate('')">=</button>
+    
+            <button class="bg-gray-300  rounded-xl" onclick="display('4')">4</button>
+            <button class="bg-gray-300  rounded-xl" onclick="display('5')">5</button>
+            <button class="bg-gray-300  rounded-xl" onclick="display('6')">6</button>
+    
+            <button class="bg-gray-300  rounded-xl" onclick="display('1')">1</button>
+            <button class="bg-gray-300  rounded-xl" onclick="display('2')">2</button>
+            <button class="bg-gray-300  rounded-xl" onclick="display('3')">3</button>
+    
+            <button class="bg-gray-300  rounded-xl" onclick="display('0')">0</button>
+            <button class="bg-gray-300  rounded-xl" onclick="display('.')">.</button>
+            <button class="bg-gray-300  rounded-xl" onclick="clr()">c</button>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
